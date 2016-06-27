@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WatchAudioCollector</string>
+    <string name="hello_world">Hello World!</string>
+    <!-- Strings shown in UI  -->
+    <string name="status">Status</string>
+    <string name="accel">Accelerometer</string>
+    <string name="steps">Steps</string>
+    <string name="nullvalue">&#8212;&#8212;.&#8212;&#8212;</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+
+    <string name="audio">Audio</string>
+    <string name="record">Record</string>
+    <string name="speaking">Speaking</string>
+    <string name="stop">Stop</string>
+</resources>

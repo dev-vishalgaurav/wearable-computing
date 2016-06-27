@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.dartmouth.cs.watchacccollector.MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#873702"
+        app:layout_box="all">
+
+        <RadioGroup
+            android:id="@+id/radioGroupLabels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:id="@+id/radioStanding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/ui_collector_radio_standing_title"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radioWalking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/ui_collector_radio_walking_title"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radioRunning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/ui_collector_radio_running_title"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/ui_collector_radio_other_title"
+                android:textSize="10sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDeleteData"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onDeleteDataClicked"
+            android:text="@string/ui_collector_button_delete_title"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnCollect"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onCollectClicked"
+            android:text="@string/ui_collector_button_start_title"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+</android.support.wearable.view.BoxInsetLayout>

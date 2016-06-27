@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+    <TextView
+        android:id="@+id/txtHistory"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:text="@string/history"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/no_data"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" />
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txtHistory"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/lstHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@null"></ListView>
+</RelativeLayout>

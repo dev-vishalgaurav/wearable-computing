@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/round_activity_final_screening">
+
+
+    <TextView
+        android:id="@+id/txtPickOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/pick_one"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imgStress1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/stress_image_height"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/s1_1" />
+
+            <ImageView
+                android:id="@+id/imgStress2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/stress_image_height"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/s2_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imgStress3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/stress_image_height"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/s3_1" />
+
+            <ImageView
+                android:id="@+id/imgStress4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/stress_image_height"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/s4_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:drawableLeft="@android:drawable/ic_menu_more"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/more" />
+    </LinearLayout>
+
+</RelativeLayout>

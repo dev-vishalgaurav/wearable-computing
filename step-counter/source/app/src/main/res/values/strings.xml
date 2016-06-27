@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WatchAccCollector</string>
+    <string name="hello_world">Hello World!</string>
+    <!-- Strings shown in UI  -->
+    <string name="status">Status</string>
+    <string name="accel">Accelerometer</string>
+    <string name="steps">Steps : </string>
+    <string name="calorie">Calories : </string>
+
+    <string name="nullvalue">&#8212;&#8212;.&#8212;&#8212;</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+</resources>
